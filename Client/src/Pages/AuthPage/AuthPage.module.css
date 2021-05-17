@@ -1,0 +1,28 @@
+.AuthPage {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #a6b0c1;
+  background-color: #303841;
+}
+
+.formContainer {
+  width: 90%;
+  max-width: 450px;
+  display: flex;
+  background-color: #262e35;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.Toggle {
+  color: #7269ef;
+}
+
+.Toggle:hover {
+  cursor: pointer;
+  color: #5246eb;
+}

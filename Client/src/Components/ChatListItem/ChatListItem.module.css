@@ -1,0 +1,26 @@
+.ListItem {
+  flex: 1;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ListItem:hover {
+  background-color: #36404a;
+}
+
+.Name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.LastMessage {
+  color: #dadada;
+}
+
+@media screen and (min-width: 800px) {
+  .ListItem {
+    padding: 1rem;
+  }
+}

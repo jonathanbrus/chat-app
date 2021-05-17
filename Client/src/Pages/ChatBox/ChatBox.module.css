@@ -1,0 +1,80 @@
+.ChatBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: #e1e9f1;
+  background-color: #262e35;
+}
+
+.Header {
+  height: 5rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #454d54;
+}
+
+.Header > button {
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.Info {
+  margin: 0.5rem 1rem;
+}
+
+.MessagesContainer {
+  padding: 1rem 3rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.MessagesContainer::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+
+.InputContainer {
+  padding: 1.5rem 3rem;
+  display: flex;
+  border-top: 1px solid #454d54;
+}
+
+.InputContainer > input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #36404a;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.SendIcon {
+  margin-left: 0.5rem;
+  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  background-color: #7168ec;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+@media screen and (max-width: 800px) {
+  .Header {
+    height: 3rem;
+  }
+  .MessagesContainer {
+    height: calc(100vh - 102px - 7rem);
+    padding: 0.5rem;
+  }
+  .InputContainer {
+    padding: 1rem;
+  }
+}

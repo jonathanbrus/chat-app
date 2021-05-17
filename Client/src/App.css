@@ -1,0 +1,12 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 800px) {
+  .App {
+    flex-direction: row;
+  }
+}

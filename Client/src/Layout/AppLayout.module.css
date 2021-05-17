@@ -1,0 +1,24 @@
+.NavBarContainer {
+  height: 4rem;
+  width: auto;
+  display: flex;
+  background-color: #353f49;
+}
+
+.PageContainer {
+  flex: 1;
+  display: flex;
+  background-color: #2f3740;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  .NavBarContainer {
+    height: auto;
+    width: 6rem;
+  }
+
+  .PageContainer {
+    flex: 2;
+  }
+}

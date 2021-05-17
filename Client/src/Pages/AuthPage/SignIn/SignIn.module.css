@@ -1,0 +1,56 @@
+.Form {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Field {
+  flex: 1;
+  margin: 0.5rem 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.Field > label {
+  margin-bottom: 1rem;
+}
+.Field > input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.Form > button {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #7269ef;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.Error {
+  font-size: 1rem;
+  color: #ff4955;
+}
+
+@media screen and (max-width: 600px) {
+  .Form {
+    padding: 0.5rem;
+  }
+  .Field {
+    margin: 0.25rem 0.5rem;
+  }
+  .Field > label {
+    margin-bottom: 0.5rem;
+  }
+  .Form > button {
+    margin: 0.5rem;
+  }
+}

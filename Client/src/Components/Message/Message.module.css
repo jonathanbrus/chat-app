@@ -1,0 +1,13 @@
+.MessageConatiner {
+  width: max-content;
+  max-width: 60vw;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .MessageConatiner {
+    margin: 0.5rem 0.25rem;
+  }
+}

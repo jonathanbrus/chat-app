@@ -1,0 +1,38 @@
+.RequestContainer {
+  width: auto;
+  height: max-content;
+  display: flex;
+  padding: 0.5rem;
+  border-bottom: 1px solid #454d54;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Info {
+  flex: 1;
+  font-size: small;
+}
+
+.CTAs > button {
+  margin-left: 0.5rem;
+  padding-top: 0.3rem;
+  background-color: transparent;
+  border: 2px solid #7168ec;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.CTAs > button:active {
+  background-color: #7168ec;
+}
+
+@media screen and (min-width: 800px) {
+  .RequestContainer {
+    padding: 1rem;
+  }
+
+  .Info {
+    font-size: medium;
+  }
+}

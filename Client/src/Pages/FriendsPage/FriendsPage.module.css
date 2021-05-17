@@ -1,0 +1,60 @@
+.FriendsPage {
+  flex: 1;
+  display: flex;
+  padding: 1rem 2rem;
+  flex-direction: column;
+  color: #e1e9f1;
+}
+
+.TopSection {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.PageHeader {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.SearchContainer {
+  display: flex;
+  margin: 0.75rem 0;
+  padding: 0.5rem;
+  background-color: #36404a;
+  border-radius: 5px;
+}
+
+.SearchContainer > input {
+  flex: 1;
+  font-size: 1rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.SearchContainer > button {
+  padding-top: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.FriendsList {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.FriendsList::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .FriendsPage {
+    padding: 0%;
+  }
+  .FriendsList {
+    height: calc(100vh - 102px - 6rem);
+  }
+}

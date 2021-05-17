@@ -1,0 +1,114 @@
+.Backdrop {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000080;
+}
+
+.ModalContainer {
+  width: 90%;
+  max-width: 500px;
+  background-color: #272c3b;
+  border-radius: 5px;
+}
+
+.Header {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #454d54;
+}
+
+.Footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid #454d54;
+}
+
+.Footer > button {
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.Footer > button:first-child {
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: #7168ec;
+  background-color: transparent;
+  border: 2px solid #7168ec;
+  border-radius: 5px;
+  outline: none;
+}
+
+.Footer > button:last-child {
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: whitesmoke;
+  background-color: #7168ec;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  outline: none;
+}
+
+.Footer > button:last-child:disabled {
+  color: white;
+  background-color: grey;
+}
+
+.Form {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Field {
+  flex: 1;
+  margin: 0.5rem 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.Field > label {
+  margin-bottom: 1rem;
+}
+.Field > input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.Form > button {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #7269ef;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .Form {
+    padding: 0.5rem;
+  }
+  .Field {
+    margin: 0.25rem 0.5rem;
+  }
+  .Field > label {
+    margin-bottom: 0.5rem;
+  }
+  .Form > button {
+    margin: 0.5rem;
+  }
+}

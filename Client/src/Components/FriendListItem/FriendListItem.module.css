@@ -1,0 +1,88 @@
+.FriendListItem {
+  flex: 1;
+  position: relative;
+  margin: 0.5rem;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.FriendListItem:hover {
+  background-color: #36404a;
+}
+
+.FriendListItem > button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.FriendListItem > button:hover {
+  cursor: pointer;
+}
+
+.Name {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Status {
+  font-size: small;
+  margin: 0.25rem 0;
+  color: #e1e9f1e5;
+}
+
+.optionsContainer {
+  position: absolute;
+  right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.optionsContainer > div {
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.25rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-in-out 150ms;
+}
+
+.optionsContainer > div:first-child {
+  font-weight: 600;
+  color: #7168ec;
+  background-color: whitesmoke;
+  border: 2px solid #7168ec;
+}
+
+.optionsContainer > div:first-child:hover {
+  background-color: #f5f5f5d5;
+}
+
+.optionsContainer > div:last-child {
+  font-weight: 600;
+  color: whitesmoke;
+  background-color: #7168ec;
+  border: 2px solid whitesmoke;
+}
+
+.optionsContainer > div:last-child:hover {
+  background-color: #7168ecd5;
+}
+
+@media screen and (min-width: 800px) {
+  .FriendListItem {
+    padding: 1rem;
+  }
+
+  .optionsContainer {
+    right: 60px;
+  }
+
+  .optionsContainer > div {
+    margin-left: 0.5rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
